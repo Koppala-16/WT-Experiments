@@ -1,0 +1,60 @@
+<html>
+<head>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url("bgimage.jpg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover; 
+        }
+        body form{
+            border: 2px solid black;
+            padding: 10px;
+        }
+        body form input{
+            font-size: 1.2em;
+        }
+    </style>    
+</head>
+<body>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <form name="fi" action="result.html" method="post">
+
+<form class="form"> 
+<h1>ANITS COLLEGE FEST</h1>   
+<h3 align="center">Registration form</h3>
+Name:
+<input type="text" name="nm" placeholder="enter name" id="n" required="required"><br><br>
+Year:
+<input type="text" name="y" placeholder="enter year"  required="required" id="ye"><br><br>
+Reg_no:
+<input type="text" name="rn" maxlength="12"  id="brn"><br><br>
+Gender:
+<input type="radio" name="g">Male
+<input type="radio" name="g">Female
+<br><br>
+Email:
+<input type="email" name="e" id="em"><br><br>
+You are intersted in:
+<select>
+<option value="Poster Presentation">Poster Presentation</option>
+<option value="Logical Minds">Logical Minds</option>
+<option value="Brain Train">Brain Train</option>
+</select>
+<input type="submit" onclick="myFunction()">
+
+</form>
+
+<script>
+    function myFunction() {
+      alert("form has been submitted");
+    }
+</script>
+
+</body>
+</html>

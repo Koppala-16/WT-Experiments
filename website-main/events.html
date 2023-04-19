@@ -1,0 +1,30 @@
+<html>
+<body>
+<h1>Keyboard Events</h1>
+<p>The colour of the text box will change ...when you press a key</p>
+<input type="text" name="testme" id="keyevent" value="" />
+<h1>Mouse Events</h1>
+<p onclick=f1(this,"blue")>Click here to change the colour of the text</p>
+<h3 id="onover" onmouseover=mouseover() onmouseout=mouseout()>Hover Here</h3>
+<script type="text/javascript" charset="utf-8">
+
+    document.getElementById("keyevent").addEventListener("keypress",key_press);
+    
+    function key_press() {
+        document.getElementById("keyevent").style.backgroundColor="grey";
+    } 
+
+    function mouseout(){
+        document.getElementById("onover").style.color="black";
+    }
+
+    function mouseover(){
+        document.getElementById("onover").style.color="grey";
+    }
+    function f1(element,color){
+    
+    element.style.color=color;   
+    }
+</script>
+</body>
+</html
